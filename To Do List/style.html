@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="todo-container">
+        <!-- All HTML elements placed here -->
+        <div class="date-hour">
+            <p id="date"></p>
+            <p id="hour"></p>
+         </div>
+         <header>
+    <h1>To Do List</h1>
+ </header>
+ <form action="" id="todo-form">
+    <p>Add Your Task Here</p>
+    <div class="form-control">
+       <input type="text" id="todo-input" placeholder="Type here about your next task">
+       <button type="submit">
+          <i class="fa-thin fa-plus"></i>
+        </button>
+    </div>
+ </form>
+
+  <!-- Edit The Todos -->
+<form action="" id="edit-form" class="hide">
+	<p>Edit Your Task</p>
+	<div class="form-control">
+		<input type="text" id="edit-input" placeholder="Type here about your next task">
+		<button type="submit">
+			<i class="fa-solid fa-check-double"></i>
+		</button>
+	</div>
+	
+	<button type="button" id="cancel-edit-btn">Cancel</button>
+</form>
+
+<!-- Todo List -->
+<div class="todo-list" id="todo-list">
+    <div class="todo">
+        
+    </div>
+</div>
+
+  </div>
+  
+ 
+<script src="style.js"></script>
+</body>
+</html>
