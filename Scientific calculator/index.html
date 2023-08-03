@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    
+    <script src="index.js"></script>
+    <div class='main-box'>
+        <section class='box-one'>
+            <article class="box-one-top">
+                <div id="box-one-text">
+                    <span style='font-size:19px'>CALCULO</span>
+                    <span>Sc-825678 PULSE</span>
+                </div>
+                <center style="margin-top:4px">
+                    <code><b>NATURAL-U.P.A.M</b></code>
+                </center>
+                <div id='box-one-middle'>
+                    <input type="text" id="result"/>
+                </div>
+                <span id="box-one-bottom">
+                    <button onclick="squareroot()">√</button>
+                    <button onclick="cuberoot()">3<sub>√</sub></button>
+                    <button onclick="fourroot()">4<sub>√</sub></button>
+                    <button onclick="fiveroot()">5<sub>√</sub></button>
+                </span>
+            </article>
+            <div class='box-two'>
+                <span>
+                    <small>x<sup>2</sup></small>
+                    <small>x<sup>3</sup></small>
+                    <small>x<sup>4</sup></small>
+                    <small>x<sup>5</sup></small>
+                    <small>x<sup>6</sup></small>
+                    <small>x<sup>7</sup></small>
+                </span>
+                <span>
+                    <button onclick="x2()">x<sup>2</sup></button>
+                    <button onclick="x3()">x<sup>3</sup></button>
+                    <button onclick="x4()">x<sup>4</sup></button>
+                    <button onclick="x5()">x<sup>5</sup></button>
+                    <button onclick="x6()">x<sup>6</sup></button>
+                    <button onclick="x7()">x<sup>7</sup></button>
+                </span>
+                <span>
+                    <small>x<sup>9</sup></small>
+                    <small>log</small>
+                    <small>ln</small>
+                    <small>e</small>
+                    <small>cot</small>
+                    <small>cotx</small>
+
+                </span>
+                <span>
+                    <button onclick="x9()">x<sup>9</sup></button>
+                    <button onclick="log()">log</button>
+                    <button onclick="ln()">ln</button>
+                    <button onclick="e()">e</button>
+                    <button onclick="cot()">cot</button>
+                    <button onclick="coth()">coth</button>
+                </span>
+                <span>
+                    <small>asinh</small>
+                    <small>asin</small>
+                    <small>sinh</small>
+                    <small>sin</small>
+                    <small>cos</small>
+                    <small>cosh</small>
+                </span>
+                <span>
+                    <button onclick="asinh()">asinh</button>
+                    <button onclick="asin()">asin</button>
+                    <button onclick="sinh()">sinh</button>
+                    <button onclick="sin()">sin</button>
+                    <button onclick="cos()">cos</button>
+                    <button onclick="cosh()">cosh</button>
+                </span>
+                <span>
+                    <small>acos</small>
+                    <small>acosh</small>
+                    <small>tan</small>
+                    <small>tanh</small>
+                    <small>atan</small>
+                    <small>atanh</small>
+                </span>
+                <span>
+                    <button onclick="acos()">acos</button>
+                    <button onclick="acosh()">acosh</button>
+                    <button onclick="tan()">tan</button>
+                    <button onclick="tanh()">tanh</button>
+                    <button onclick="atan()">atan</button>
+                    <button onclick="atanh()">atanh</button>
+                </span>
+
+            </div>
+            <div class='box-three'>
+                <span>
+                    <small>M</small>
+                    <small>G</small>
+                    <small>T</small>
+                    <small>INS</small>
+                    <small>OFF</small>
+                </span>
+                <span>
+                    <button onclick="dis('7')">7</button>
+                    <button onclick="dis('8')">8</button>
+                    <button onclick="dis('9')">9</button>
+                    <button onclick="del()">DEL</button>
+                    <button onclick="del()">AC</button>
+                </span>
+                <span>
+                    <small>MAT</small>
+                    <small>VCT</small>
+                    <small>K</small>
+                    <small>nPr</small>
+                    <small>nCr</small>
+                </span>
+                <span>
+                    <button onclick="dis('4')">4</button>
+                    <button onclick="dis('5')">5</button>
+                    <button onclick="dis('6')">6</button>
+                    <button onclick="dis('*')">x</button>
+                    <button onclick="dis('/')">÷</button>
+                </span>
+                <span>
+                    <small>S-SUM</small>
+                    <small>S-VAR</small>
+                    <small>DISTR</small>
+                    <small>e = 0</small>
+                    <small>a+bi</small>
+                </span>
+                <span>
+                    <button onclick="dis('1')">1</button>
+                    <button onclick="dis('2')">2</button>
+                    <button onclick="dis('3')">3</button>
+                    <button onclick="dis('+')">+</button>
+                    <button onclick="dis('-')">-</button>
+                </span>
+                <span>
+                    <small>RND</small>
+                    <small>RAN#</small>
+                    <small>!@</small>
+                    <small>DRG</small>
+                    <small>Re-IM</small>
+                </span>
+                <span>
+                    <button onclick="dis('0')">0</button>
+                    <button onclick="dis('.')">.</button>
+                    <button>EXP</button>
+                    <button onclick="dis('ANS')">ANS</button>
+                    <button onclick="solve()">=</button>
+                </span>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
